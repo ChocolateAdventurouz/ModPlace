@@ -43,20 +43,21 @@
 	<rect id="wdh.outer" x="4" y="4" w="-8" relatw="1" h="-8" relath="1" color="80,80,80"/>
 
 	<rect id="wdh.drag" x="-5" y="-5" relatx="1" relaty="1" h="5" w="5" filled="1" color="100,100,100" cursor="IDC_SIZENWSE"/>
-
+	
 	<windowholder id="wdh" x="5" y="5" w="-10" relatw="1" h="-10" relath="1" autofocus="1" wantfocus="1" autoclose="1" autoopen="1" autoavailable="0" visible="1" hold="guid:{F0816D7B-FFFC-4343-80F2-E8199AA15CC3}"/>
 
 	<script file="scripts/videoresize.maki"/>
 
 </groupdef>
 
-<groupdef id="wdh.video">
+<groupdef id="wdh.video" >
 
 	<layer x="1" y="4" h="1" w="-2" relatw="1" image="sui.component.bottom2" move="0" alpha="180"/>
 	<layer x="1" y="-24" relaty="1" h="1" w="-2" relatw="1" image="sui.component.top2" move="0" />
 
-	<group id="wdh.video.resizable" x="1" y="5" w="-2" relatw="1" h="-29" relath="1" />
-
+	<group id="wdh.video.resizable" x="1" y="5" w="-2" relatw="1" h="-29" relath="1" visible="1"/>
+	<text id="gen.infotxt" relatx="1" size="11" bold="0" valign="bottom" x="-500" y="5" w="173" text="Video2Art is enabled" color="wasabi.titlebar.color" ghost="1" font="Arial" antialias="1"/>
+	<script file="scripts/video2art_wdh_handler.maki"/>
 	<Button action="VID_FS"
 		x="4" y="-21" h="21" w="24" relaty="1"  rectrgn="1"
 		image="video.button.fullscreen.normal"

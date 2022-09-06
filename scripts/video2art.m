@@ -2,7 +2,7 @@
 
 #include "lib/std.mi"
 #include "attribs/init_modplace.m"
-
+#include "attribs/init_playlist.m"
 
 Global String skinName_current;
 Global Group video2art_sg;
@@ -14,6 +14,7 @@ Function InitProc_Video2Art();
 
 System.onScriptLoaded(){
     initAttribs_ModPlace();
+    initAttribs_playlist();
     video2art_sg = getScriptGroup();
     wdh = video2art_sg.findObject("wdh.video.resizable");
     wacover = video2art_sg.findObject("winamp.albumart");
@@ -36,6 +37,7 @@ RefreshSkin(){
 
 InitProc_Video2Art(){
     if (attr_art_to_video.getData() == "1"){
+        playlist_cover_attrib.setData("1");
         wacover.setXmlParam("visible", "0");
         wdh.setXMLParam("visible", "1");
         RefreshSkin();

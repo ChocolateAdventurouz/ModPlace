@@ -5,7 +5,7 @@ Patched files:
 
 - infoline.m
 - suicore.m
-- tabcontrol.m
+- tabcontrol.m 
 - fileinfo.m
 - loadattribs.m
 - video2art.m
