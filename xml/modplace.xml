@@ -1,0 +1,7 @@
+<include file="player-elements.xml"/>
+<include file="system-elements.xml"/>
+<container id="extras" name="Modplace" default_visible="1" default_w="364">
+
+	<include file="modplace-normal.xml"/>
+
+</container>
