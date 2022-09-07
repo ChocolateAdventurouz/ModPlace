@@ -26,7 +26,7 @@ Internet:	www.skinconsortium.com
 #include attribs/init_notifier.m
 #include attribs/init_browser.m
 #include attribs/init_modplace.m
-
+#include attribs/init_coverplaying.m
 Global Configattribute FontRenderer, findOpenRect;
 Global String FontRenderer_default, findOpenRect_default;
 Global configAttribute skin_attrib;
@@ -40,7 +40,7 @@ System.onScriptLoaded()
 	initAttribs_Browser();
 	initAttribs_Vis();
 	initAttribs_ModPlace();
-
+	initAttribs_CoverPlaying();
 	//without optionsmenu entry:
 	initAttribs_windowpage();
 	initAttribs_Playlist();

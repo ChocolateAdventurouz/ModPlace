@@ -253,7 +253,7 @@
 		display="text" align="left" shift="-2"
 		antialias="1"
 	/>
-	<text id="gen.infotxt" relatx="1" size="11" bold="0" valign="bottom" x="-270" y="5" w="173" text="⭐CoverPlaying - Version 1.12" color="wasabi.titlebar.color" ghost="1" font="Arial" antialias="1"/>
+	<text id="buildinfo" relatx="1" size="11" bold="0" valign="bottom" x="-270" y="5" w="173" text="CoverPlaying - Version 1.2" color="wasabi.titlebar.color" ghost="1" font="Arial" antialias="1" visible="1"/>
 	<script file="scripts/coverplaying.maki"/>
 	<script file="scripts/albumart.maki" param="winamp.albumart"/>
 </groupdef>

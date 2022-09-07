@@ -14,18 +14,19 @@ Description: It obtains the song title and "transmits" it to the mod
 #include <lib/std.mi>
 
 #include <lib/com/songinfo.m>
-
-Global GuiObject sg_title;
+#include "attribs/init_coverplaying.m"
+Global GuiObject sg_title, buildinfo;
 Global Text cp_title;
-
+Global String str_buildinfo;
 Function loadmetadata();
 System.onScriptLoaded()
 {
+	initAttribs_CoverPlaying();
 	Group mainnormal = getContainer("main").getLayout("normal");
-
+	String str_buildinfo = "CoverPlaying - Version 1.2";
 	sg_title = mainnormal.findObject("CoverPlaying.Title");
 	cp_title = sg_title.findObject("text");
-
+	buildinfo = mainnormal.findObject("buildinfo");
 
 
 	loadmetadata();
@@ -37,7 +38,6 @@ loadmetadata()
 	String METATITLE = System.getplayitemmetadatastring("title");
 	String METARTIST = System.getplayitemmetadatastring("artist");
 	String NULLTitle = System.removePath(getPlayItemString());
-
 	if (getplayitemmetadatastring("title") == "")
 	{
 			sg_title.setXMLParam("text", "Loading Metadata...");
@@ -67,4 +67,21 @@ System.onResume()
 System.onTitleChange(String newtitle)
 {
 	loadmetadata();
+}
+attr_buildinfo_enable_disable.onDataChanged(){
+	if (attr_buildinfo_enable_disable.getData() == "1"){
+		buildinfo.setXMLParam("visible", "1");
+	}
+	else {
+		buildinfo.setXMLParam("visible", "0");
+	}
+}
+attr_nowplaying_enable_disable.onDataChanged(){
+	if (attr_nowplaying_enable_disable.getData() == "1"){
+		sg_title.setXMLParam("visible", "1");
+
+	}
+	else {
+		sg_title.setXMLParam("visible", "0");
+	}
 }
