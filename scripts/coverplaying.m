@@ -5,7 +5,7 @@
 	 =========
    Metadata Transmitter
 
-	Version 1.0.3
+	Version 1.2.0.1
 
 Coded by: ChocolateAdventurouz
 Description: It obtains the song title and "transmits" it to the mod
@@ -28,7 +28,22 @@ System.onScriptLoaded()
 	cp_title = sg_title.findObject("text");
 	buildinfo = mainnormal.findObject("buildinfo");
 
-
+	if (attr_buildinfo_enable_disable.getData() == "1"){
+		buildinfo.setXMLParam("visible", "1");
+		//messagebox("BuildInfo -> Enabled", "Information", 0, "");
+	}
+	else {
+		buildinfo.setXMLParam("visible", "0");
+		//messagebox("BuildInfo -> Disabled", "Information", 0, "");
+	}
+	if (attr_nowplaying_enable_disable.getData() == "1"){
+		sg_title.setXMLParam("visible", "1");
+		//messagebox("NowPlaying -> Enabled", "Information", 0, "");
+	}
+	else {
+		sg_title.setXMLParam("visible", "0");
+		//messagebox("NowPlaying -> Disabled", "Information", 0, "");
+	}
 	loadmetadata();
 
 }
@@ -71,17 +86,20 @@ System.onTitleChange(String newtitle)
 attr_buildinfo_enable_disable.onDataChanged(){
 	if (attr_buildinfo_enable_disable.getData() == "1"){
 		buildinfo.setXMLParam("visible", "1");
+		//messagebox("BuildInfo -> Enabled", "Information", 0, "");
 	}
 	else {
 		buildinfo.setXMLParam("visible", "0");
+		//messagebox("BuildInfo -> Disabled", "Information", 0, "");
 	}
 }
 attr_nowplaying_enable_disable.onDataChanged(){
 	if (attr_nowplaying_enable_disable.getData() == "1"){
 		sg_title.setXMLParam("visible", "1");
-
+		//messagebox("NowPlaying -> Enabled", "Information", 0, "");
 	}
 	else {
 		sg_title.setXMLParam("visible", "0");
+		//messagebox("NowPlaying -> Disabled", "Information", 0, "");
 	}
 }
