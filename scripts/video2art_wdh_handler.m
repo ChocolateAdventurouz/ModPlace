@@ -1,6 +1,6 @@
 // Video2Art wdh handler
 
-#include "lib/std.mi"
+#include <lib/std.mi>
 #include "attribs/init_modplace.m"
 
 

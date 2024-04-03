@@ -1,6 +1,6 @@
 // Video2Art
 
-#include "lib/std.mi"
+#include <lib/std.mi>
 #include "attribs/init_modplace.m"
 #include "attribs/init_playlist.m"
 
