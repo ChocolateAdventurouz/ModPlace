@@ -13,7 +13,8 @@ Global ConfigAttribute attr_file_labels_enable_disable;
 Global ConfigAttribute attr_permanent_branding_enable_disable;
 Global ConfigAttribute attr_antialias_mcv;
 Global ConfigAttribute attr_art_to_video;
-
+Global ConfigAttribute attr_search_enable_disable;
+Global ConfigAttribute attr_oldtimer;
 initAttribs_ModPlace(){
     initPages();
 
@@ -23,8 +24,10 @@ initAttribs_ModPlace(){
     attr_coverplaying_enable_disable = custom_page_modplace.newAttribute("Enable/Disable CoverPlaying", "0");
     attr_file_labels_enable_disable = custom_page_modplace.newAttribute("Enable/Disable File Labels", "1");
     attr_permanent_branding_enable_disable = custom_page_modplace.newAttribute("Enable Permanent Branding", "0");
-    attr_antialias_mcv = custom_page_modplace.newAttribute("Antialias fileinfo/mcv", "0");
+    attr_antialias_mcv = custom_page_modplace.newAttribute("Anti-alias fileinfo/mcv", "0");
     attr_art_to_video = custom_page_modplace.newAttribute("Video playback to cover", "0");
+    attr_search_enable_disable = custom_page_modplace.newAttribute("Enable/Disable Information Lookup on Browser (WACUP Default) ", "1");
+    attr_oldtimer = custom_page_modplace.newAttribute("Use Timer's old location", "0");
 }
 /*
 #ifdef MAIN_ATTRIBS_MGR

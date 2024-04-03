@@ -1,11 +1,13 @@
-<layout id="modplace_main" droptarget="pldr" w="300">
-    <Wasabi:StandardFrame:NoStatus x="0" y="0" w="0" h="0" relatw="1" relath="1" content="modplace"/>
-    <Wasabi:Button id="brw_enable_disable" x="10" y="30" w="122" h="20" text="Enable/Disable Browser" tooltip="Enable or Disable The omBrowser" action="" retcode="0"/>
-    <Wasabi:Button id="coverplaying_enable_disable" x="10" y="70" w="152" h="20" text="Enable/Disable CoverPlaying" tooltip="Enable or Disable The CoverPlaying Mod (Disabled By Default)" action="" retcode="0"/>
+<layout id="modplace_main" h="430" w="260">
+    <Wasabi:StandardFrame:NoStatus x="0" y="0" w="430" h="260"  content="modplace"/>
+    <Wasabi:Button id="brw_enable_disable" x="10" y="30" w="160" h="20" text="Enable/Disable Browser" tooltip="Enable or Disable The omBrowser" action="" retcode="0"/>
+    <Wasabi:Button id="coverplaying_enable_disable" x="10" y="70" w="160" h="20" text="Enable/Disable CoverPlaying" tooltip="Enable or Disable The CoverPlaying Mod (Disabled By Default)" action="" retcode="0"/>
     <Wasabi:Button id="file_labels_enable_disable" x="10" y="110" w="160" h="20" text="Enable/Disable Hiding File Labels" tooltip="This will remove the labels 'Title:, Artist:, Album: etc' like on Big Bento Modern" action="" retcode="0"/>
-    <Wasabi:Button id="antialias_mcv" x="10" y="150" w="152" h="20" text="Antialias FileInfo/MCV Section" tooltip="This will make the letters on the mcv/fileinfo rounded" action="" retcode="0"/>
-    <Wasabi:Button id="permanent_branding_enable_disable" x="140" y="30" w="112" h="20" text="Show Branding" tooltip="This will replace the fileinfo section with the Winamp/WACUP branding (like you see when the playlist is empty, or when you play the demo.mp3)" action="" retcode="0"/>
-    <Wasabi:Button id="video_to_art" x="180" y="110" w="140" h="20" text="Video to cover (Video2Art)" tooltip="" action="" retcode="0"/>
-    <text id="gen.infotxt" relatx="1" size="11" bold="0" align="right" x="-270" y="182" w="200" text="Version 0.3.1 - Made with ♡ by Rel@m" color="wasabi.titlebar.color" ghost="1" font="Arial" antialias="1"/>
+    <Wasabi:Button id="antialias_mcv" x="10" y="150" w="160" h="20" text="Antialias FileInfo/MCV Section" tooltip="This will make the letters on the mcv/fileinfo rounded" action="" retcode="0"/>
+    <Wasabi:Button id="permanent_branding_enable_disable" x="180" y="30" w="240" h="20" text="Show Branding" tooltip="This will replace the fileinfo section with the Winamp/WACUP branding (like you see when the playlist is empty, or when you play the demo.mp3)" action="" retcode="0"/>
+    <Wasabi:Button id="video_to_art" x="180" y="110" w="240" h="20" text="Video to cover (Video2Art)" tooltip="" action="" retcode="0"/>
+    <Wasabi:Button id="search_enable_disable" x="180" y="150" w="240" h="20" text="Enable/Disable Information Lookup on Browser" tooltip="" action="" retcode="0"/>
+    <Wasabi:Button id="use_oldtimer" x="180" y="70" w="240" h="20" text="Use Old Timer Location" tooltip="" action="" retcode="0"/>
+    <text id="gen.infotxt" size="11" bold="0" align="center" x="110" y="240" w="200" text="Version 0.3.2 by ChocolateAdventurouz" color="wasabi.titlebar.color" ghost="1" font="Arial" antialias="0"/>
     <script file="/scripts/modplace.maki"/>
 </layout>
