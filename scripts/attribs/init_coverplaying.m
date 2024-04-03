@@ -1,6 +1,6 @@
 /* 
 *======================================*
-*  CoverPlaying attribs initialization *
+*CoverPlaying attributes initialization*
 *======================================*
 */
 
