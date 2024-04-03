@@ -1,5 +1,5 @@
-<layout id="modplace_main" h="430" w="260">
-    <Wasabi:StandardFrame:NoStatus x="0" y="0" w="430" h="260"  content="modplace"/>
+<layout id="normal" w="430" h="260" default_visible="1">
+    <Wasabi:StandardFrame:NoStatus x="0" y="0" w="430" h="260" content="modplace" default_visible="1"/>
     <Wasabi:Button id="brw_enable_disable" x="10" y="30" w="160" h="20" text="Enable/Disable Browser" tooltip="Enable or Disable The omBrowser" action="" retcode="0"/>
     <Wasabi:Button id="coverplaying_enable_disable" x="10" y="70" w="160" h="20" text="Enable/Disable CoverPlaying" tooltip="Enable or Disable The CoverPlaying Mod (Disabled By Default)" action="" retcode="0"/>
     <Wasabi:Button id="file_labels_enable_disable" x="10" y="110" w="160" h="20" text="Enable/Disable Hiding File Labels" tooltip="This will remove the labels 'Title:, Artist:, Album: etc' like on Big Bento Modern" action="" retcode="0"/>

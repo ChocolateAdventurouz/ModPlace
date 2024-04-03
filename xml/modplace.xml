@@ -1,6 +1,6 @@
 <include file="player-elements.xml"/>
 <include file="system-elements.xml"/>
-<container id="normal" name="Modplace" default_visible="1" minimum_h="492" minimum_w="633" h="600" w="800" x="400" y="300">
+<container id="normal" name="Modplace" default_visible="1">
 
 	<include file="modplace-normal.xml"/>
 
