@@ -2,13 +2,12 @@
 
 <WinampAbstractionLayer version="1.35">
 	<skininfo>
-		<version>1.2.9</version>
+		<version>1.2.5</version>
 		<name>Big Bento</name>
-		<author>Martin Pöhlmann, Taber Buhl, ChocolateAdventurouz (Rel@m)</author>
-		<comment>Graphics by Taber Buhl - Wasabi Development by Ben Allison and Martin Poehlmann. Unofficial Maintence by Rel@m aka ChocolateAdventurouz</comment>
-		<email>martin@skinconsortium.com</email>
-		<screenshot>screenshot.png</screenshot>
-		<homepage>http://www.skinconsortium.com/</homepage>
+		<author>Martin Pöhlmann, Taber Buhl</author>
+		<comment>Injected With ModPlace -- Graphics by Taber Buhl - Wasabi Development by Ben Allison and Martin Poehlmann</comment>
+		<screenshot>wacupscreenshot.png</screenshot>
+		<wacupscreenshot>wacupscreenshot.png</wacupscreenshot>
 	</skininfo>
 
 	<accelerators section="general">
@@ -20,12 +19,13 @@
 	</accelerators>
 
 	<accelerators section="normal">
-			<accelerator bind="space" action="SHOW_CURRENT_TRACK" />
+		<accelerator bind="space" action="SHOW_CURRENT_TRACK" />
 	</accelerators>
 
 	<scripts>
-		<script file="scripts/loadattribs.maki" param="big"/> <!-- Must be loaded at first -->
+		<script file="scripts/loadattribs.maki" param="big,@HAVE_BROWSER@"/> <!-- Must be loaded at first -->
 	</scripts>
+
 
 	<include file="xml/color-presets.xml"/>
 	<include file="xml/system-colors.xml"/>
