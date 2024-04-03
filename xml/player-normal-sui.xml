@@ -243,17 +243,25 @@
 </groupdef>
 
 <groupdef id="wdh.art">
-	<AlbumArt id="winamp.albumart" move="1" fitparent="1" rectrgn="1" notfoundImage="winamp.cover.notfound.xxl"/>
-	<layer id="winamp.webalbumart" fitparent="1" move="0" image="winamp.cover.shoutcast" visible="0"/>
+	<!--<layer id="winamp.albumart" move="1" fitparent="1" rectrgn="1" notfoundImage="winamp.cover.notfound.xxl"/>-->
+
 	<layer x="2" y="-28" w="-4" h="-26" relatw="1" relath="1" image="window.background.gradient" move="0" ghost="1"/>
 	
+	<AlbumArt id="winamp.albumart" x="10" y="100" w="512" h="512" rectrgn="1" image="winamp.albumart" move="0" notfoundImage="winamp.cover.notfound.xxl"/>
 	<text id="CoverPlaying.Title"
-		x="0" y="0" w="1000000" h="15" visible="1"
-		font="Arial" fontsize="14"
+		x="550" y="150" w="1000000" h="42" visible="1"
+		font="Arial" fontsize="48" bold="1"
 		display="text" align="left" shift="-2"
 		antialias="1"
 	/>
-	<text id="buildinfo" relatx="1" size="11" bold="0" valign="bottom" x="-270" y="5" w="173" text="CoverPlaying - Version 1.2" color="wasabi.titlebar.color" ghost="1" font="Arial" antialias="1" visible="1"/>
+	<text id="CoverPlaying.Artist"
+		x="550" y="250" w="1000000" h="36" visible="1"
+		font="Arial" fontsize="24" light="1"
+		display="text" align="left" shift="-2"
+		antialias="1"
+	/>
+	<text id="buildinfo" relatx="1" size="11" bold="0" valign="bottom" x="-270" y="5" w="173" text="CoverPlaying - Version 1.3" color="wasabi.titlebar.color" ghost="1" font="Arial" antialias="1" visible="1"/>
+	<layer x="2" y="-28" w="-4" h="-26" relatw="1" relath="1" image="window.background.gradient" move="0" ghost="1"/>
 	<script file="scripts/coverplaying.maki"/>
 	<script file="scripts/albumart.maki" param="winamp.albumart"/>
 </groupdef>
@@ -374,7 +382,7 @@ the object itself is a button.
 	<Bento:TabButton
 		id="switch.art"
 		x="321" h="23" w="83" y="7"
-		tabtext="⭐CoverPlaying"
+		tabtext="CoverPlaying"
 	/>
 	<script file="scripts/tabcontrol.maki" param="@HAVE_LIBRARY@"/>
 
