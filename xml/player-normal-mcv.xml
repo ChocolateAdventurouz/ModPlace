@@ -796,6 +796,7 @@ link="sometext" displayed as hover tooltip
 		downImage="infocomp.button.blank.down"
 		tooltip="Search the web for this artist"
 		anchor_menu="bottomleft"
+		visible="1"
 	/>
 	<layer id="search.icon.bg" x="-95" y="-18" relatx="1" ghost="1" relaty="1" image="infocomp.button.icon.bg" />
 	<script file="scripts/syncbutton.maki" param="search;search.icon.bg"/>
@@ -810,6 +811,7 @@ link="sometext" displayed as hover tooltip
 		downImage="infocomp.button.blank.down"
 		tooltip="More information about this artist"
 		anchor_menu="bottomleft"
+		visible="1"
 	/>
 	<layer id="nowplaying.icon.bg" x="-126" y="-18" relatx="1" ghost="1"  relaty="1" image="infocomp.button.icon.bg" />
 	<script file="scripts/syncbutton.maki" param="nowplaying;nowplaying.icon.bg"/>
@@ -817,7 +819,7 @@ link="sometext" displayed as hover tooltip
 	<script file="scripts/syncbutton.maki" param="nowplaying;nowplaying.icon"/>
 
 	<script file="scripts/shadelinks.maki"/>
-
+	<script file="scripts/infobuttons_hooker.maki"/>
 	<!--script file="scripts/componentregion.maki" param="comp.menu" /-->
 
 	<!--layer id="osd.trigger" fitparent="1" rectrgn="1" ghost="0"/-->
